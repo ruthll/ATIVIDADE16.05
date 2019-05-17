@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Novo-planejamento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+    <form #form="ngForm" (ngSubmit)="salvar(form)">
+      <ion-item>
+        <ion-label color='primary' position='floating'>
+          Nome do Planejamento:
+        </ion-label>
+        <ion-input name='nome' ngModel>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" position='floating'>
+          Faturamento mensal:
+        </ion-label>
+        <ion-textarea name='faturamento' ngModel>
+        </ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" position='floating'>
+          Custo Fixo Mensal:
+        </ion-label>
+        <ion-textarea name='custo' ngModel>
+        </ion-textarea>
+      </ion-item>
+      <ion-list>
+      </ion-list>
+      <ion-button type='submit'>
+        <ion-icon name='save'></ion-icon>
+          Salvar Plano
+      </ion-button>
+    </form>
+
+ 
+    
+  
+</ion-content>
